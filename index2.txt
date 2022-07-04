@@ -1,0 +1,2 @@
+1. Contare quanti iscritti ci sono stati ogni anno
+1. SELECT COUNT(`id`) AS "Numero_Studenti", year(`enrolment_date`) AS "Anno_Iscrizione" FROM `students` GROUP BY year(`enrolment_date`);
