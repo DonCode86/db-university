@@ -3,3 +3,6 @@
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 2. SELECT COUNT(`id`) AS "Numero_insegnanti", `office_address` AS "Indirizzo" FROM `teachers` GROUP BY Indirizzo;
+
+3. Calcolare la media dei voti di ogni appello d'esame
+3. SELECT `exam_id` AS "Appello_Esame", AVG(`vote`) AS "Media_Voti" FROM `exam_student` GROUP BY `exam_id`;
